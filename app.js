@@ -25,7 +25,6 @@ function callback() {
             output_translate.innerText = output_text;
         })
         .catch(errorhandler)
-    output_translate.innerText = input_translate.value;
 }
 
 translate.addEventListener("click", callback)
