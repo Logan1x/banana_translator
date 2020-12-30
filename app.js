@@ -2,10 +2,19 @@ var translate = document.querySelector("#btn-translate");
 var input_translate = document.querySelector("#input-translate")
 var output_translate = document.querySelector("#output-translate")
 
-var url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json" + "?" + "text=" + input_translate.value
+// mock server
+// var url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+
+
+// actual server
+var url = "https://api.funtranslations.com/translate/minion.json"
+
+function urlfunc(url){
+    return url + "?" + "text=" + input_translate.value
+}
 
 function callback() {
-    fetch(url)
+    fetch(urlfunc(url))
         .then(response => response.json())
         .then(json => { 
             var output_text = json.contents.translated;
