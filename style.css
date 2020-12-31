@@ -167,9 +167,24 @@ textarea {
     padding-inline-start: 0px;
 }
 
-.hero-img{
+/* hero */
+
+.hero{
+    padding: 1rem;
+}
+
+.hero .hero-img{
     max-width: 80%;
     width: 350px;
     display: block;
     margin: auto;
+}
+
+.hero .hero-heading{
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+.hero .heading-inverted{
+    color: var(--primary-color);
 }
