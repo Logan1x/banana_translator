@@ -28,3 +28,22 @@ function callback() {
 }
 
 translate.addEventListener("click", callback)
+
+
+function darkmode() {
+    var dm = document.getElementById("icon-dm").style.display = "none";
+    var lm = document.getElementById("icon-lm").style.display = "inline";
+    document.querySelector("body").style.color = "white";
+    document.querySelector("body").style.backgroundColor = "#1F2937";
+    document.querySelector("textarea").style.backgroundColor = "#1F2937";
+    document.querySelector("textarea").style.color = "white";
+}
+
+function lightmode() {
+    var dm = document.getElementById("icon-dm").style.display = "inline";
+    var lm = document.getElementById("icon-lm").style.display = "none";
+    document.querySelector("body").style.color = "Black";
+    document.querySelector("body").style.backgroundColor = "white";
+    document.querySelector("textarea").style.backgroundColor = "white";
+    document.querySelector("textarea").style.color = "black";
+}

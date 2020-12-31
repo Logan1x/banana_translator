@@ -188,3 +188,15 @@ textarea {
 .hero .heading-inverted{
     color: var(--primary-color);
 }
+
+/* icon */
+
+.icon-dm{
+    color: white;
+    display: inline;
+}
+
+.icon-lm{
+    color: white;
+    display: none ;
+}
