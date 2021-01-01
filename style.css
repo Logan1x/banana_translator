@@ -22,6 +22,8 @@ body {
     position: relative;
 }
 
+/* dark mode */
+
 .dark-mode {
     color: white;
     background-color: #1F2937;
@@ -35,6 +37,8 @@ body {
 .dark-mode .link-primary {
     color: white;
 }
+
+/* textarea */
 
 textarea {
     display: block;
