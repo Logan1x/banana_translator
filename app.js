@@ -37,6 +37,8 @@ function darkmode() {
     document.querySelector("body").style.backgroundColor = "#1F2937";
     document.querySelector("textarea").style.backgroundColor = "#1F2937";
     document.querySelector("textarea").style.color = "white";
+    document.querySelector("#btn-translate").style.color = "white";
+    document.querySelector("#btn-translate").style.borderColor = "#2563EB";
 }
 
 function lightmode() {
@@ -46,4 +48,6 @@ function lightmode() {
     document.querySelector("body").style.backgroundColor = "white";
     document.querySelector("textarea").style.backgroundColor = "white";
     document.querySelector("textarea").style.color = "black";
+    document.querySelector("#btn-translate").style.color = "#2563EB";
+    document.querySelector("#btn-translate").style.borderColor = "#2563EB";
 }
