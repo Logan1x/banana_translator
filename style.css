@@ -13,13 +13,27 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    position:relative;
+    position: relative;
+}
+
+.dark-mode {
+    color: white;
+    background-color: #1F2937;
+}
+
+.dark-mode textarea {
+    background-color: #1F2937;
+    color: white;
+}
+
+.dark-mode .link-primary {
+    color: white;
 }
 
 textarea {
@@ -129,12 +143,14 @@ textarea {
     border-radius: 100px;
     background-color: transparent;
     padding: 8px 24px;
-    color: var(--primary-color);;
+    color: var(--primary-color);
+    ;
     /* display: block; */
     max-width: 140px;
     margin: 1rem 1rem 1rem 0rem;
-    
-    border: 1px solid var(--primary-color);;
+
+    border: 1px solid var(--primary-color);
+    ;
 }
 
 .link-secondary {
@@ -173,34 +189,34 @@ textarea {
 
 /* hero */
 
-.hero{
+.hero {
     padding: 1rem;
 }
 
-.hero .hero-img{
+.hero .hero-img {
     max-width: 80%;
     width: 350px;
     display: block;
     margin: auto;
 }
 
-.hero .hero-heading{
+.hero .hero-heading {
     text-align: center;
     margin: 1rem 0rem;
 }
 
-.hero .heading-inverted{
+.hero .heading-inverted {
     color: var(--primary-color);
 }
 
 /* icon */
 
-.icon-dm{
+.icon-dm {
     color: white;
     display: inline;
 }
 
-.icon-lm{
+.icon-lm {
     color: white;
-    display: none ;
+    display: none;
 }

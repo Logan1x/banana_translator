@@ -30,24 +30,16 @@ function callback() {
 translate.addEventListener("click", callback)
 
 
-function darkmode() {
-    var dm = document.getElementById("icon-dm").style.display = "none";
-    var lm = document.getElementById("icon-lm").style.display = "inline";
-    document.querySelector("body").style.color = "white";
-    document.querySelector("body").style.backgroundColor = "#1F2937";
-    document.querySelector("textarea").style.backgroundColor = "#1F2937";
-    document.querySelector("textarea").style.color = "white";
-    document.querySelector("#btn-translate").style.color = "white";
-    document.querySelector("#btn-translate").style.borderColor = "#2563EB";
-}
+var currentTheme = 'dark';
 
-function lightmode() {
-    var dm = document.getElementById("icon-dm").style.display = "inline";
-    var lm = document.getElementById("icon-lm").style.display = "none";
-    document.querySelector("body").style.color = "Black";
-    document.querySelector("body").style.backgroundColor = "white";
-    document.querySelector("textarea").style.backgroundColor = "white";
-    document.querySelector("textarea").style.color = "black";
-    document.querySelector("#btn-translate").style.color = "#2563EB";
-    document.querySelector("#btn-translate").style.borderColor = "#2563EB";
+function changeTheme() {
+    document.body.classList.toggle('dark-mode');
+
+    if (currentTheme === 'dark') {
+        document.getElementById('toggleknop').innerHTML = '<i class="fas fa-sun" id="zon" style="color:#d8c658;"></i>';
+        currentTheme = 'sun';
+    } else {
+        document.getElementById('toggleknop').innerHTML = '<i class="fas fa-moon" id="maan" style="color:#737eac;"></i>';
+        currentTheme = 'dark';
+    }
 }
