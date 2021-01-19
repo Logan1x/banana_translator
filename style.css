@@ -24,17 +24,17 @@ body {
 
 /* dark mode */
 
-.dark-mode {
+.dark-theme {
     color: white;
     background-color: #1F2937;
 }
 
-.dark-mode textarea {
+.dark-theme textarea {
     background-color: #1F2937;
     color: white;
 }
 
-.dark-mode .link-primary {
+.dark-theme .link-primary {
     color: white;
 }
 
