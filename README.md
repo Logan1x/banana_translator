@@ -10,3 +10,11 @@ This project is vanilla javascript project which uses api from https://funtransl
 <a href="https://banana-trans.netlify.app/"><p align="center">
         <img src="https://i.imgur.com/uIQyhtX.png" title="banana translator">
 </p></a>
+
+## How it works
+
+<a href="https://banana-trans.netlify.app/"><p align="center">
+        <img src="https://i.imgur.com/K9w10K3.gif" title="banana translator">
+</p></a>
+
+
