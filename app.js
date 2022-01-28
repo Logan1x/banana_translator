@@ -24,7 +24,7 @@ function callback() {
             var output_text = json.contents.translated;
             output_translate.innerText = output_text;
         })
-        .catch(errorhandler)
+        .catch(errorhandler(error))
 }
 
 translate.addEventListener("click", callback)
