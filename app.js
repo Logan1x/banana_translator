@@ -13,18 +13,15 @@ function urlfunc(url) {
     return url + "?" + "text=" + input_translate.value
 }
 
-function errorhandler(error) {
-    alert("Something wrong with the server. Please try again later.")
-}
-
 function callback() {
     fetch(urlfunc(url))
         .then(response => response.json())
         .then(json => {
             var output_text = json.contents.translated;
             output_translate.innerText = output_text;
-        })
-        .catch(errorhandler(e))
+        }).catch(function errorhandler(error) {
+    alert("Something wrong with the server. Please try again later.")
+})
 }
 
 translate.addEventListener("click", callback)
